@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@10'0;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon" />
+    <title>Super Mario Bros - O filme</title>
+  </head>
+  <body>
+    
+    <div class="wraper">
+      <div class="banner">
+        <video autoplay loop muted>
+          <source src="./src/video-mario.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <header>
+        <a href="#">
+          <img src="./src/logo-chapeu-mario.png" alt="logo chapéu Mario" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Detalhes</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div>
+          <div class="conteudo">
+            <img class="imagem-titulo" src="./src/titulo.png" alt="immagem do titulo do filme"/>
+            <p>
+              Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar
+              no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado
+              pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os
+              lugares.
+            </p>
+            <button class="open-modal">Veja o trailer</button>
+          </div>
+    
+        
+          <img class="img-mario" src="./src/super-mario-chars.png" />
+        
+      </main>
+      <div class="modal">
+
+        <div class="modal-content">
+          <div class="box-close">
+            <button id="close-modal">X</button>
+          </div> 
+          
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; ; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+        </div>
+
+      </div>
+    
+
+    <script src="script.js" ></script>
+
+  </body>
+</html>
